@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af16b85da1b42a921e7eb3b4879c1ee5",
+    "content-hash": "a4723d1831b518e7fc67e51e21f08830",
     "packages": [
         {
             "name": "1994/back-in-stock-statamic",
-            "version": "dev-main",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/1994limited/back-in-stock-statamic.git",
+                "reference": "4f7d6341b648bf6a14f8fa731e5cbef508ffdb7c"
+            },
             "dist": {
-                "type": "path",
-                "url": "../back-in-stock-statamic",
-                "reference": "aab74bb5c31959194674bb10cb9e101d6adff8db"
+                "type": "zip",
+                "url": "https://api.github.com/repos/1994limited/back-in-stock-statamic/zipball/4f7d6341b648bf6a14f8fa731e5cbef508ffdb7c",
+                "reference": "4f7d6341b648bf6a14f8fa731e5cbef508ffdb7c",
+                "shasum": ""
             },
             "require": {
                 "duncanmcclean/statamic-cargo": "^1.15",
@@ -26,16 +32,16 @@
             },
             "type": "statamic-addon",
             "extra": {
-                "statamic": {
-                    "name": "Back in Stock",
-                    "description": "Back in stock alerts for Cargo. Shoppers leave their email on a sold-out product or variant and get one email when it's back.",
-                    "developer": "1994",
-                    "developer-url": "https://1994.co.uk"
-                },
                 "laravel": {
                     "providers": [
                         "NineteenNinetyFour\\BackInStock\\ServiceProvider"
                     ]
+                },
+                "statamic": {
+                    "name": "Back in Stock",
+                    "developer": "1994",
+                    "description": "Back in stock alerts for Cargo. Shoppers leave their email on a sold-out product or variant and get one email when it's back.",
+                    "developer-url": "https://1994.co.uk"
                 }
             },
             "autoload": {
@@ -43,11 +49,7 @@
                     "NineteenNinetyFour\\BackInStock\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "NineteenNinetyFour\\BackInStock\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -69,12 +71,11 @@
                 "waitlist"
             ],
             "support": {
-                "email": "hello@1994.co.uk"
+                "email": "hello@1994.co.uk",
+                "issues": "https://github.com/1994limited/back-in-stock-statamic/issues",
+                "source": "https://github.com/1994limited/back-in-stock-statamic/tree/v1.0.0"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "time": "2026-10-15T21:59:53+00:00"
         },
         {
             "name": "ajthinking/archetype",
@@ -12784,9 +12785,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "1994/back-in-stock-statamic": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
