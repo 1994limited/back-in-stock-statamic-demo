@@ -1,0 +1,27 @@
+{{# The signed-in reader's back-in-stock alerts, with a button to cancel each. #}}
+<div class="saved-head">
+    <h1>Your alerts</h1>
+</div>
+
+{{ if logged_in }}
+    <ul class="saved-list alerts">
+        {{ back_in_stock:alerts }}
+            <li class="saved-row">
+                <span class="meta">{{ status_label }}</span>
+                <div>
+                    <h3>{{ if url }}<a href="{{ url }}">{{ title }}</a>{{ else }}{{ title }}{{ /if }}</h3>
+                    {{ if variant_name }}<p class="note-plain">{{ variant_name }}</p>{{ /if }}
+                    {{ if is_unconfirmed }}<p class="note-plain">Check your inbox: click the link in our email to confirm.</p>{{ /if }}
+                </div>
+                {{ back_in_stock:cancel :alert="id" redirect="/alerts" }}
+                    <button type="submit" class="link-button">Cancel</button>
+                {{ /back_in_stock:cancel }}
+            </li>
+        {{ /back_in_stock:alerts }}
+    </ul>
+    {{ unless {back_in_stock:alerts} }}
+        <p class="empty">No alerts. When a book you want is sold out, leave your email on its page and it shows here.</p>
+    {{ /unless }}
+{{ else }}
+    <p class="empty"><a href="/login">Sign in</a> to see the alerts you've asked for.</p>
+{{ /if }}
