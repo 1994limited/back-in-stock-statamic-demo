@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "1994/back-in-stock-statamic",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/1994limited/back-in-stock-statamic.git",
-                "reference": "4f7d6341b648bf6a14f8fa731e5cbef508ffdb7c"
+                "reference": "9cdf1eb3ebfcf50a5ae15ed488dd58a7bd6abe1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1994limited/back-in-stock-statamic/zipball/4f7d6341b648bf6a14f8fa731e5cbef508ffdb7c",
-                "reference": "4f7d6341b648bf6a14f8fa731e5cbef508ffdb7c",
+                "url": "https://api.github.com/repos/1994limited/back-in-stock-statamic/zipball/9cdf1eb3ebfcf50a5ae15ed488dd58a7bd6abe1f",
+                "reference": "9cdf1eb3ebfcf50a5ae15ed488dd58a7bd6abe1f",
                 "shasum": ""
             },
             "require": {
@@ -73,9 +73,9 @@
             "support": {
                 "email": "hello@1994.co.uk",
                 "issues": "https://github.com/1994limited/back-in-stock-statamic/issues",
-                "source": "https://github.com/1994limited/back-in-stock-statamic/tree/v1.0.0"
+                "source": "https://github.com/1994limited/back-in-stock-statamic/tree/v1.0.1"
             },
-            "time": "2026-10-15T21:59:53+00:00"
+            "time": "2026-10-16T12:34:16+00:00"
         },
         {
             "name": "ajthinking/archetype",
